@@ -47,8 +47,9 @@ if __name__ == '__main__':
             }
 
             # send data
-            print("Data Send to Ambient!")
-            am.send(data)
+            r = am.send(data)
+            print("Status Code:" + r.status_code)
+            
 
         except IOError:
             # send error
