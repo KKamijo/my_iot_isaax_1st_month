@@ -9,6 +9,8 @@ import time
 import datetime
 import os
 
+for env in os.environ:
+    print(env +  ' : ' + os.environ.get(env))
 AMBIENT_CHANNEL_ID = int(os.environ.get('AMBIENT_CHANNEL_ID'))
 AMBIENT_WRITE_KEY = os.environ.get('AMBIENT_WRITE_KEY')
 
