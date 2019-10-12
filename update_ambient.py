@@ -62,5 +62,6 @@ if __name__ == '__main__':
             logger.exception(e)
 
         # wait time to next send timing
-        print("Waiting...")
+        print("Waiting Start")
         time.sleep(CHECK_SPAN)
+        print("Waiting End")
