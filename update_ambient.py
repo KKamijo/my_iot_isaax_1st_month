@@ -47,7 +47,7 @@ if __name__ == '__main__':
             }
 
             # send data
-            print("Data Send to Ambient!"
+            print("Data Send to Ambient!")
             am.send(data)
 
         except IOError:
