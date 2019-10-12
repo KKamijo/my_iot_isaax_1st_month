@@ -18,8 +18,8 @@ if __name__ == '__main__':
     from logging import StreamHandler
     logger.addHandler(StreamHandler())
     
-    dt_now = datetime.datetime.now()
-    print(dt_now.strftime('%Y/%m/%d %H:%M:%S') + " Running!")
+    # check start script
+    print("Script start!")
 
     # create Ambient Object
     am = ambient.Ambient(AMBIENT_CHANNEL_ID, AMBIENT_WRITE_KEY)
@@ -27,6 +27,10 @@ if __name__ == '__main__':
     # main loop
     while True:
         try:
+            # check running
+            dt_now = datetime.datetime.now()
+            print(dt_now.strftime('%Y/%m/%d %H:%M:%S') + " Running!")
+
             # get acceleromener values
             acc_values = [round(x,2) for x in envirophat.motion.accelerometer()]
 
