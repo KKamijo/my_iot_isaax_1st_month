@@ -48,7 +48,7 @@ if __name__ == '__main__':
 
             # send data
             r = am.send(data)
-            print("Status Code:" + r.status_code)
+            print("Status Code:" + str(r.status_code))
             
 
         except IOError:
