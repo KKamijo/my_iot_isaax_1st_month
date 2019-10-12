@@ -1,7 +1,7 @@
 #! /usr/bin/env pyhton3
 
-from logging import getLogger
-logger = getLogger(__name__)
+#from logging import getLogger
+#logger = getLogger(__name__)
 
 import envirophat
 import ambient
@@ -15,8 +15,8 @@ AMBIENT_WRITE_KEY = os.environ.get('AMBIENT_WRITE_KEY')
 CHECK_SPAN = int(os.environ.get('CHECK_SPAN'))
 
 if __name__ == '__main__':
-    from logging import StreamHandler
-    logger.addHandler(StreamHandler())
+#    from logging import StreamHandler
+#    logger.addHandler(StreamHandler())
     
     # check start script
     print("Script start!")
@@ -47,6 +47,7 @@ if __name__ == '__main__':
             }
 
             # send data
+            print("Data Send to Ambient!"
             am.send(data)
 
         except IOError:
@@ -59,7 +60,7 @@ if __name__ == '__main__':
         except Exception as e:
             # send error
             print("Exception has occurred!")
-            logger.exception(e)
+#            logger.exception(e)
 
         # wait time to next send timing
         print("Waiting Start")
