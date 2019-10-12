@@ -2,9 +2,9 @@
   "name": "my_iot_isaax-ci-script",
   "version": "0.0.0",
   "description": "isaax-agent test script",
-  "main": "main.py",
-  "author": "nc30",
-  "license": "GPL",
+  "main": "",
+  "author": "",
+  "license": "",
   "language":"python",
   "scripts": {
      "start": "python3 -u update_ambient.py"
