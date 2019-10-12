@@ -9,8 +9,6 @@ import time
 import datetime
 import os
 
-for env in os.environ:
-    print(env +  ' : ' + os.environ.get(env))
 AMBIENT_CHANNEL_ID = int(os.environ.get('AMBIENT_CHANNEL_ID'))
 AMBIENT_WRITE_KEY = os.environ.get('AMBIENT_WRITE_KEY')
 
@@ -21,7 +19,7 @@ if __name__ == '__main__':
     logger.addHandler(StreamHandler())
     
     dt_now = datetime.datetime.now()
-    print(dt_now.strftime('%Y/%m/%d %H:%M:%S') + "Hello World!")
+    print(dt_now.strftime('%Y/%m/%d %H:%M:%S') + " Running!")
 
     # create Ambient Object
     am = ambient.Ambient(AMBIENT_CHANNEL_ID, AMBIENT_WRITE_KEY)
