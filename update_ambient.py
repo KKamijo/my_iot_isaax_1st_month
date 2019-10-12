@@ -50,12 +50,17 @@ if __name__ == '__main__':
             am.send(data)
 
         except IOError:
+            # send error
+            print("IOError has occurred!")
             # this is connection erro to enviro phat
             time.sleep(CHECK_SPAN)
             continue
 
         except Exception as e:
+            # send error
+            print("Exception has occurred!")
             logger.exception(e)
 
         # wait time to next send timing
+        print("Waiting...")
         time.sleep(CHECK_SPAN)
