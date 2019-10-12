@@ -12,7 +12,7 @@ import os
 AMBIENT_CHANNEL_ID = int(os.environ.get('AMBIENT_CHANNEL_ID'))
 AMBIENT_WRITE_KEY = os.environ.get('AMBIENT_WRITE_KEY')
 
-CHECK_SPAN = int(os.environ.get('CHECK_SPAN'), 30)
+CHECK_SPAN = int(os.environ.get('CHECK_SPAN'))
 
 if __name__ == '__main__':
     from logging import StreamHandler
