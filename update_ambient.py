@@ -1,7 +1,7 @@
 #! /usr/bin/env pyhton3
 
-#from logging import getLogger
-#logger = getLogger(__name__)
+from logging import getLogger
+logger = getLogger(__name__)
 
 import envirophat
 import ambient
@@ -61,7 +61,7 @@ if __name__ == '__main__':
         except Exception as e:
             # send error
             print("Exception has occurred!")
-#            logger.exception(e)
+            logger.exception(e)
 
         # wait time to next send timing
         print("Waiting Start")
